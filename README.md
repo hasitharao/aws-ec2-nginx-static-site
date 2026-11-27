@@ -146,15 +146,25 @@ Opening `http://YOUR_PUBLIC_IP` in a browser shows the **"Hello from AWS EC2!"**
 
 ## Screenshots
 
-> Add your screenshots to a `screenshots/` folder and update the file names below.
+**1. EC2 instance running** (both status checks passed)
 
-| What | File |
-|---|---|
-| EC2 instance running | `screenshots/01-instance-running.png` |
-| Security group inbound rules (22 and 80) | `screenshots/02-security-group.png` |
-| SSH session on the server | `screenshots/03-ssh-session.png` |
-| Nginx status: active (running) | `screenshots/04-nginx-status.png` |
-| Live website in the browser | `screenshots/05-website.png` |
+![EC2 instance running](screenshots/01-instance-running.png)
+
+**2. Security group inbound rules** (SSH on port 22 limited to a single IP, HTTP on port 80 open to everyone; my IP address is blurred)
+
+![Security group inbound rules](screenshots/02-security-group.png)
+
+**3. SSH session on the server** (Ubuntu welcome banner after logging in)
+
+![SSH session](screenshots/03-ssh-session.png)
+
+**4. Nginx status** (`active (running)`)
+
+![Nginx status](screenshots/04-nginx-status.png)
+
+**5. Live website** (served over HTTP from the instance's public IP)
+
+![Live website](screenshots/05-website.png)
 
 ---
 
